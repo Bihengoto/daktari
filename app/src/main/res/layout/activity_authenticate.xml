@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context="com.mahugu.cdaktari.MainActivity">
+    tools:context="com.mahugu.cdaktari.authenticate"
+    android:background="#000000">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -16,30 +16,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chagua Daktari"
-        android:textSize="50dp"
-        android:textStyle="bold"
+        android:text="Fill The Form Appropriately"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
         android:textColor="#E64A19"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"/>
+        android:textSize="20sp" />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome To Chagua Daktari app. Hit next to get the services"
-        android:textSize="25dp"
+        android:id="@+id/locationEditText"
+        android:background="@color/colorTextIcons"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
-        android:textColor="#E64A19"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Page"
-        android:id="@+id/nextButton"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="350dp"
+        android:padding="20dp"
+        android:hint="Enter Full Name"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authenticate"
+        android:id="@+id/findRestaurantsButton"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTextIcons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
