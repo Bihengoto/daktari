@@ -7,21 +7,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    private Button mNextButton;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
+    @BindView(R.id.nextButton) Button mNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        mNextButton = (Button) findViewById(R.id.nextButton);
-        mNextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, authenticate.class);
-                startActivity(intent);
-            }
-        });
+        mNext.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == mNext){
+            Intent intent = new Intent(MainActivity.this,authenticate.class);
+            startActivity(intent);
+        }
     }
 }

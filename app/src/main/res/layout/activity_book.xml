@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fill The Form Appropriately"
-        android:id="@+id/appNameTextView"
         android:layout_marginTop="150dp"
         android:layout_marginLeft="100dp"
         android:textSize="30sp"
@@ -24,29 +24,40 @@
         />
 
     <EditText
-        android:id="@+id/locationEditText"
+        android:id="@+id/patient"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="100dp"
         android:textColor="#ffff"
-        android:hint="Enter Full Name"
+        android:hint="Patient Name"
         android:textColorHint="@color/colorAccent"
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/doctor"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:layout_marginLeft="100dp"
         android:textColor="#ffff"
-        android:hint="Enter Password"
+        android:hint="Doctor Name"
         android:textColorHint="@color/colorAccent"
         />
 
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="#ffff"
+        android:hint="Patient Name"
+        android:textColorHint="@color/colorAccent"
+        />
+    
     <Button
-        android:id="@+id/nextButtonAuth"
+        android:id="@+id/bookNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -58,5 +69,6 @@
         android:layout_marginBottom="80dp"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
-        android:text="Authenticate" />
+        android:text="Book Now" />
+
 </RelativeLayout>
