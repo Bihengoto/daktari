@@ -71,4 +71,9 @@
         android:textColor="@color/colorTextIcons"
         android:text="Book Now" />
 
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp" />
+
 </RelativeLayout>
